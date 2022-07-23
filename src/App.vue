@@ -1,7 +1,7 @@
 <template> 
 	
 	<div class="main">
-		<button class="btn" @click="upp" > Выше</button>
+		<button class="btn" @click="up" > Выше</button>
 			<div class="inner" v-for="object in objects.slice(0,maxslice)">
 			<h3>{{object.text}}</h3> <img src="../smallimg.png" alt="">
 			</div>
@@ -38,7 +38,7 @@ export default{
 	},
 	methods:{
 
-		upp(){
+		up(){
 			
 			const a = this.objects[this.objects.length-1]
 			this.objects.pop()
